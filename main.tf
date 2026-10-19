@@ -11,11 +11,11 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-east-1c"
 }
 
 resource "aws_instance" "web_server" {
-  ami           = "ami-REPLACE-WITH-VALID-AMI"
+  ami           = "ami-0b6d9d3d33ba97d99"
   instance_type = "t3.micro"
 
   tags = {
